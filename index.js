@@ -1,6 +1,8 @@
 var env = require('node-env-file');
 var Twit = require('twit');
 var Pusher = require('pusher');
+var express = require('express');
+var app = express();
 
 var detectEnvironment = process.env.ENV || 'local'
 // Load any undefined ENV variables form a specified file.
@@ -40,3 +42,13 @@ stream.on('tweet', function (data) {
     "tweet": tweet
   });
 });
+
+app.set('port', (process.env.PORT || 9001)); 
+
+app.get('/', function (req, res) {
+    res.send(process.env.TRACK_FILTER);
+});
+
+app.listen(app.get('port'), function() { 
+    console.log("Node app is running at localhost:" + app.get('port')); 
+}); 
