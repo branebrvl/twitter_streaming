@@ -1,0 +1,25 @@
+{
+  "name": "node-js-twitter-streaming",
+  "version": "0.1.0",
+  "description": "A Node.js app using Twitter Streaming API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/branebrvl/twitter_streaming.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
