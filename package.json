@@ -7,7 +7,10 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "~4.9.x"
+    "express": "~4.9.x",
+    "node-env-file": "^0.1.4",
+    "twit": "^1.1.19",
+    "pusher": "^1.0.2"
   },
   "engines": {
     "node": "0.10.x"
